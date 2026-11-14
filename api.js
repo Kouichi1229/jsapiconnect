@@ -22,7 +22,7 @@ var wIcon_6 = document.querySelector('#wicon_6');
 
 //串接台灣天氣api，將城市名稱代入html的選單中
 function getWeather() {
-    const apiKey ='https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-035?Authorization=CWB-1EF84EFB-3A18-45EE-AF0A-5BB8D44C13F1&format=JSON&elementName=T,Wx,WeatherDescription&sort=time';
+    const apiKey ='https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-035?Authorization=APIKey&format=JSON&elementName=T,Wx,WeatherDescription&sort=time';
     xhr.open('get',apiKey, true);
     xhr.send(null);
     xhr.onload = function() {
